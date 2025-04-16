@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "classId": 1,
+    "taskTitle": "Algebra Worksheet\"",
+    "taskDescription": "aasdf",
+    "taskType": "homework",
+    "subject": "math",
+    "dueDate": "2004-10-01"
+  },
+  {
+    "id": 2,
+    "classId": 1,
+    "taskTitle": "Algebra Worksheet\"",
+    "taskDescription": "aasdf",
+    "taskType": "homework",
+    "subject": "math",
+    "dueDate": "2004-10-01"
+  }
+]

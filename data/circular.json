@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "circularTitle": "Republic Day Celebration",
+    "circularRef": "CIRC211",
+    "priority": "high",
+    "category": "event"
+  },
+  {
+    "id": 2,
+    "circularTitle": "Winter Holidays Announced",
+    "circularRef": "CIRC212",
+    "priority": "medium",
+    "category": "holiday"
+  },
+  {
+    "id": 3,
+    "circularTitle": "Annual Sports Meet",
+    "circularRef": "CIRC213",
+    "priority": "low",
+    "category": "sports"
+  }
+]

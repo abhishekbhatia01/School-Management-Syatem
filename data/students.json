@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "classId": 1,
+    "fname": "Akshit",
+    "lname": "Mittal",
+    "age": "20",
+    "fathername": "Rajiv Mittal",
+    "mobno": "9005599815",
+    "batch": "2023"
+  },
+  {
+    "id": 2,
+    "classId": 2,
+    "fname": "Satyam",
+    "lname": "Singhal",
+    "age": "20",
+    "fathername": "qqwq",
+    "mobno": "9854521452",
+    "batch": "22"
+  },
+  {
+    "id": 3,
+    "classId": 1,
+    "fname": "John",
+    "lname": "Doe",
+    "age": "19",
+    "fathername": "Peter Doe",
+    "mobno": "9876543210",
+    "batch": "2023"
+  },
+  {
+    "id": 4,
+    "classId": 2,
+    "fname": "Ravi",
+    "lname": "Sharma",
+    "age": "21",
+    "fathername": "Suraj Sharma",
+    "mobno": "9001234567",
+    "batch": "2022"
+  },
+  {
+    "id": 5,
+    "classId": 3,
+    "fname": "Sanya",
+    "lname": "Verma",
+    "age": "20",
+    "fathername": "Ravi Verma",
+    "mobno": "8765432109",
+    "batch": "2023"
+  },
+  {
+    "id": 6,
+    "classId": 3,
+    "fname": "Nikita",
+    "lname": "Gupta",
+    "age": "22",
+    "fathername": "Rajesh Gupta",
+    "mobno": "9009876543",
+    "batch": "2022"
+  },
+  {
+    "id": 7,
+    "classId": 4,
+    "fname": "Amit",
+    "lname": "Kumar",
+    "age": "20",
+    "fathername": "Vikram Kumar",
+    "mobno": "9998887777",
+    "batch": "2023"
+  },
+  {
+    "id": 8,
+    "classId": 4,
+    "fname": "Anjali",
+    "lname": "Mehta",
+    "age": "21",
+    "fathername": "Raj Mehta",
+    "mobno": "8887776666",
+    "batch": "2022"
+  },
+  {
+    "id": 9,
+    "classId": 5,
+    "fname": "Priya",
+    "lname": "Bansal",
+    "age": "19",
+    "fathername": "Manoj Bansal",
+    "mobno": "7776665555",
+    "batch": "2023"
+  },
+  {
+    "id": 10,
+    "classId": 5,
+    "fname": "Deepak",
+    "lname": "Singh",
+    "age": "22",
+    "fathername": "Raj Singh",
+    "mobno": "6665554444",
+    "batch": "2022"
+  },
+  {
+    "id": 11,
+    "classId": 1,
+    "fname": "Abhishek",
+    "lname": "Bhatia",
+    "age": "20",
+    "fathername": "Suresh Kumar",
+    "mobno": "9034678817",
+    "batch": "2023"
+  },
+  {
+    "id": 12,
+    "classId": 1,
+    "fname": "Abhishek",
+    "lname": "Bhatia",
+    "age": "20",
+    "fathername": "Suresh Kumar",
+    "mobno": "9034678817",
+    "batch": "2023"
+  },
+  {
+    "id": 13,
+    "classId": 11,
+    "fname": "Abhishek",
+    "lname": "Bhatia",
+    "age": "20",
+    "fathername": "Suresh Kumar",
+    "mobno": "9034678817",
+    "batch": "2023"
+  }
+]

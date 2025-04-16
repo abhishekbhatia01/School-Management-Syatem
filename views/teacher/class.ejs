@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    /* Simple reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #f6f8fa; /* Light gray with blue tint */
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50; /* Deep blue-gray */
+      color: white;
+      padding: 20px 0;
+      height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ecf0f1; /* Off-white */
+    }
+
+    .sidebar hr {
+      border: none;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .nav-links a {
+      display: block;
+      color: #bdc3c7; /* Light gray */
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .nav-links a.active {
+      background-color: #3498db; /* Bright blue */
+      color: white;
+    }
+
+    .nav-links i {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    /* Main content styles */
+    .main-content {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+        
+    .container h2 {
+      color: #2c3e50;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      border-bottom: 2px solid #eaeaea;
+      padding-bottom: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 25px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 14px 18px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #3498db;
+      color: white;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f8f9fa;
+    }
+        
+    tr:hover {
+      background-color: #e3f2fd;
+      transition: background-color 0.2s;
+    }
+
+    .no-data {
+      color: #e74c3c;
+      font-size: 18px;
+      margin: 30px 0;
+      text-align: center;
+      padding: 20px;
+      background: #fff8f8;
+      border-radius: 8px;
+      border-left: 4px solid #e74c3c;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: all 0.3s;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      text-align: center;
+      margin: 0 2px;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+        
+    .btn-add {
+      background-color: #2ecc71;
+    }
+        
+    .btn-add:hover {
+      background-color: #27ae60;
+    }
+        
+    .btn-show {
+      background-color: #3498db;
+    }
+        
+    .btn-show:hover {
+      background-color: #2980b9;
+    }
+        
+    .action-btns {
+      text-align: center;
+    }
+        
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+    }
+        
+    .btn-back {
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #34495e;
+    }
+    
+    .btn-back:hover {
+      background-color: #2c3e50;
+    }
+        
+    .btn-delete {
+      background-color: #e74c3c;
+    }
+        
+    .btn-delete:hover {
+      background-color: #c0392b;
+    }
+
+    /* Simple responsive design */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      
+      .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .nav-links a {
+        margin: 3px;
+      }
+      
+      .container {
+        margin-top: 20px;
+        padding: 15px;
+      }
+      
+      table {
+        font-size: 14px;
+      }
+      
+      th, td {
+        padding: 10px 12px;
+      }
+      
+      .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>School Management</h2>
+    <hr>
+    <div class="nav-links">
+      <a href="/teacherd"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+      <a href="/stud-teacher"><i class="fa-solid fa-user"></i> <span>Students</span></a>
+      <a href="/class-teacher" class="active"><i class="fa-solid fa-chalkboard-user"></i> <span>Class</span></a>
+     <a href="/teacher-circular"><i class="fa-solid fa-file-lines"></i> <span>Circulars</span></a>
+      <a href="/choose"><i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span></a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="container">
+      <h2>Registered Classes</h2>
+      
+      <% if (classes && classes.length > 0) { %>
+      <table>
+          <tr>
+              <th>ID</th>
+              <th>Standard</th>
+              <th>Section</th>
+              <th>Add Students</th>
+              <th>Show Students</th>
+              <th>Assign Task</th>
+          </tr>
+          <% classes.forEach(cls => { %>
+          <tr>
+              <td><%= cls.id %></td>
+              <td><%= cls.standard %></td>
+              <td><%= cls.section %></td>
+              <td class="action-btns">
+                  <a href="/registeruser/<%= cls.id %>" class="btn btn-add">Add</a>
+              </td>
+              <td class="action-btns">
+                  <a href="/show/<%= cls.id %>" class="btn btn-show">Show</a>
+              </td>
+              <td class="action-btns">
+                  <a href="/tasks/<%= cls.id %>" class="btn btn-delete">Assign</a>
+              </td>
+          </tr>
+          <% }) %>
+      </table>
+      <% } else { %>
+          <div class="no-data">
+              <p>No classes registered yet.</p>
+          </div>
+      <% } %>
+
+    </div>
+  </div>
+</body>
+</html>

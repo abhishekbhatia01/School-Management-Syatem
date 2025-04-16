@@ -1,0 +1,37 @@
+[
+  {
+    "username": "abhi_0110",
+    "name": "Abhishek Bhatia",
+    "email": "abhibhatia0410@gmail.com",
+    "password": "$2b$10$f85gb34MEEPgRgT3silGNu/1JP1zrQSFfmylVbsJqhNT2A5wEjgo.",
+    "role": "admin"
+  },
+  {
+    "username": "2310990094",
+    "name": "Abhishek ",
+    "email": "abhishek0094.be23@chitkara.edu.in",
+    "password": "$2b$10$a1N6OvS4kvGeAQjcaPAsQ.j0upyJ8fEDQLQ4xAFqpJ9PcRZSmLUem",
+    "role": "teacher"
+  },
+  {
+    "username": "qqq",
+    "name": "wind sound",
+    "email": "abhibhatia0410@gmail.com",
+    "password": "$2b$10$CRmX6sHlQBhoueVHYwpLSOPEBUAanGns4/DA/TjPUwcRTQgKA5BgK",
+    "role": "admin"
+  },
+  {
+    "username": "akshit01",
+    "name": "Aksht Mittal",
+    "email": "abhibhatia0410@gmail.com",
+    "password": "$2b$10$zmsb7GIMpVXW3Lbmpsm7EOqttYEMlgFnI62YY5b8LvBFY2gC0Jfte",
+    "role": "admin"
+  },
+  {
+    "username": "akshit02",
+    "name": "Akshit Mittal",
+    "email": "abhibhatia0410@gmail.com",
+    "password": "$2b$10$dIqzOEbyB4uOeUkPDKIe3.PUSHzomffckPESOzw4CGsJAy/lgEjoi",
+    "role": "admin"
+  }
+]

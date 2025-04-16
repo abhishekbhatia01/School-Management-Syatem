@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eduford</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+/* 1 */
+header {
+  
+  background-image: url('/images/back-to-school-frame-background-animation-supplies-and-a-cloud-with-a-space-for-your-text-free-video.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  position: relative;
+}
+
+.navbar {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  /* color: white; */
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+  /* color: white; */
+}
+
+.hero-content p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #000;
+}
+
+
+
+/* 2 */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80vh;
+  padding: 40px;
+  
+  background: linear-gradient(to  top,#00aeff,white);
+}
+
+.left-section {
+  max-width: 50%;
+ 
+  margin-left: 300px;
+}
+
+.left-section h1 {
+ 
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.left-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.demo-button {
+  background-color: #0066ff;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.demo-button:hover {
+  background-color: #004fcc;    
+}
+
+.right-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+}
+
+
+
+
+/* 3 */
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.container2 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 70px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+
+
+
+
+/* 4 */
+.container3{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 80px;
+}
+.cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 80px;
+      flex-wrap: wrap;
+      margin-top: 90px;
+    }
+.container3 h1{
+    font-size: 40px;
+}
+.card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px 20px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+.card:hover {
+      transform: translateY(-5px);
+    }
+
+.card img {
+      height: 40px;
+      margin-bottom: 15px;
+    }
+.card h2 {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+.card p {
+      font-size: 0.95em;
+      color: #666;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+.learn-more {
+      display: inline-block;
+      padding: 8px 16px;
+      border: 2px solid #3f51b5;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #3f51b5;
+      font-weight: bold;
+      transition: background 0.2s, color 0.2s;
+    }
+
+.learn-more:hover {
+      background: #3f51b5;
+      color: white;
+    }
+
+    
+.card.admin { border-top: 4px solid #3f51b5; }
+.card.teacher { border-top: 4px solid #388e3c; }
+.card.student { border-top: 4px solid #fbc02d; }
+
+
+
+
+/* 5 */
+.footer {
+      background: #0c1d4a;
+      color: #fff;
+      padding: 60px 40px 20px;
+      margin-top: 100px;
+    }
+
+    .footer .top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer .column {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer h3 {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+    }
+
+    .footer p {
+      font-size: 0.9em;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer ul li a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer ul li a:hover {
+      color: #fff;
+    }
+
+    .social-icons {
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .social-icons img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #1c2b5e;
+      padding: 5px;
+    }
+
+    .footer .bottom {
+      text-align: center;
+      padding-top: 30px;
+      font-size: 0.85em;
+      color: #aaa;
+      border-top: 1px solid #1a2d55;
+      margin-top: 30px;
+    }
+
+
+
+
+    /* Responsive Design */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .left-section {
+    max-width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .container3 .cards-container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .btn, .demo-button, .learn-more {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .container2 h1,
+  .container3 h1 {
+    font-size: 1.8em;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .top {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 22px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+
+  .btn, .demo-button, .learn-more {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer h3 {
+    font-size: 1em;
+  }
+
+  .footer p, .footer ul li a, .footer .bottom {
+    font-size: 0.8em;
+  }
+}
+
+</style>
+<body>
+
+    <!-- 1 -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135699.png" alt="Eduford Logo" />
+        <span>Eduford</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">BLOG</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="hero-content">
+      <h1>Inspiring Minds, Transforming Lives</h1>
+      <p>
+        Using an advanced Quality Scoring Algorithm and Machine Learning, we ensure that you receive more ideas from our top-quality creatives.
+      </p>
+      <a href="#" class="btn">Visit Us To Know More</a>
+    </div>
+  </header>
+
+
+<!-- 2 -->
+  <div class="container">
+    <div class="left-section">
+      <h1>Manage Your School With Ease</h1>
+      <p>
+        EduManage provides a comprehensive solution for schools to manage students,
+        teachers, classes, attendance, grades, and more – all in one place.
+      </p>
+      <button class="demo-button">Request Demo</button>
+    </div>
+    
+  </div>
+
+
+
+<!-- 3 -->
+  <div class="container2">
+    <h1>Powerful Features</h1>
+    <div class="features">
+        <div class="card">
+            <div class="icon">🎓</div>
+            <h2>Student Management</h2>
+            <p>Track student records, performance, attendance, and progress all in one centralized system.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🧑‍🏫</div>
+            <h2>Teacher Management</h2>
+            <p>Streamline teacher assignments, schedules, attendance, and performance tracking.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📚</div>
+            <h2>Class Management</h2>
+            <p>Easily create and manage classes, subjects, schedules, and curriculum plans.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📊</div>
+            <h2>Advanced Analytics</h2>
+            <p>Get insights with detailed reports on student performance, attendance, and school operations.</p>
+        </div>
+        <div class="card">
+            <div class="icon">📅</div>
+            <h2>Attendance Tracking</h2>
+            <p>Automated attendance tracking for students and staff with instant notifications.</p>
+        </div>
+        <div class="card">
+            <div class="icon">🔔</div>
+            <h2>Communication Tools</h2>
+            <p>Builtin messaging, alerts, and notification system for seamless communication.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 4 -->
+<div class="container3">
+<h1>Tailored For Every Role</h1>
+  <div class="cards-container">
+    <div class="card admin">
+      <img src="https://img.icons8.com/ios-filled/50/000000/admin-settings-male.png" alt="Admin Icon" />
+      <h2>Administrators</h2>
+      <p>Comprehensive tools for managing school operations, staff, finances, and making data-driven decisions.</p>
+      <a href="#" class="learn-more">Learn More</a>
+    </div>
+    <div class="card teacher">
+      <img src="https://img.icons8.com/ios-filled/50/000000/classroom.png" alt="Teacher Icon" />
+      <h2>Teachers</h2>
+      <p>Simplify lesson planning, grading, attendance, and student progress tracking all from one interface.</p>
+      <a href="#" class="learn-more">Learn More</a>
+    </div>
+    <div class="card student">
+      <img src="https://img.icons8.com/ios-filled/50/000000/graduation-cap.png" alt="Student Icon" />
+      <h2>Students</h2>
+      <p>Access assignments, track grades, communicate with teachers, and manage schedules easily.</p>
+      <a href="#" class="learn-more">Learn More</a>
+    </div>
+  </div>
+</div>
+
+  
+
+<!-- 5 -->
+<footer class="footer">
+    <div class="top">
+      <div class="column">
+        <h3>EduManage</h3>
+        <p>The complete school management solution designed for modern educational institutions.</p>
+        <div class="social-icons">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/facebook--v1.png" alt="Facebook" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/twitter.png" alt="Twitter" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" /></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" /></a>
+        </div>
+      </div>
+
+      <div class="column">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h3>Resources</h3>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Tutorials</a></li>
+          <li><a href="#">Documentation</a></li>
+        </ul>
+      </div>
+
+      <div class="column">
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Data Processing</a></li>
+          <li><a href="#">Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bottom">
+      © 2025 EduManage. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

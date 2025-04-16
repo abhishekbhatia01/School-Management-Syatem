@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "fname": "Abhishek",
+    "lname": "Bhatia",
+    "age": "20",
+    "mobno": "9034678817",
+    "jdate": "2004-10-01"
+  },
+  {
+    "id": 2,
+    "fname": "Riya",
+    "lname": "Sharma",
+    "age": "21",
+    "mobno": "9876543210",
+    "jdate": "2003-08-15"
+  },
+  {
+    "id": 3,
+    "fname": "Aman",
+    "lname": "Verma",
+    "age": "22",
+    "mobno": "9123456789",
+    "jdate": "2002-06-20"
+  },
+  {
+    "id": 4,
+    "fname": "Sanya",
+    "lname": "Mehra",
+    "age": "19",
+    "mobno": "9345678123",
+    "jdate": "2005-01-12"
+  },
+  {
+    "id": 5,
+    "fname": "Karan",
+    "lname": "Malhotra",
+    "age": "20",
+    "mobno": "9456123789",
+    "jdate": "2004-05-09"
+  },
+  {
+    "id": 6,
+    "fname": "Neha",
+    "lname": "Rao",
+    "age": "20",
+    "mobno": "9567891234",
+    "jdate": "2004-12-25"
+  },
+  {
+    "id": 7,
+    "fname": "Vikram",
+    "lname": "Kapoor",
+    "age": "23",
+    "mobno": "9012345678",
+    "jdate": "2001-03-30"
+  },
+  {
+    "id": 8,
+    "fname": "Priya",
+    "lname": "Gupta",
+    "age": "21",
+    "mobno": "9234567890",
+    "jdate": "2003-07-11"
+  },
+  {
+    "id": 9,
+    "fname": "Rohit",
+    "lname": "Singh",
+    "age": "22",
+    "mobno": "9647852310",
+    "jdate": "2002-11-02"
+  },
+  {
+    "id": 10,
+    "fname": "Satyam",
+    "lname": "Singhal",
+    "age": "25",
+    "mobno": "9005599815",
+    "jdate": "2005-10-01"
+  },
+  {
+    "id": 11,
+    "fname": "Akshit",
+    "lname": "Mittal",
+    "age": "20",
+    "mobno": "9854521452",
+    "jdate": "2025-02-01"
+  }
+]

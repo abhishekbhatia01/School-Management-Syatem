@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/dash.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>School Management</h2>
+        <hr>
+        <div class="nav-links">
+          <a href="/dashome"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+          <a href="/admindash" class="active"><i class="fa-solid fa-user"></i> <span>Students</span></a>
+          <a href="/teacher"><i class="fa-solid fa-person-chalkboard"></i> <span>Teachers</span></a>
+          <a href="/class"><i class="fa-solid fa-chalkboard-user"></i> <span>Class</span></a>
+         <a href="/circularBoard"><i class="fa-solid fa-note-sticky"></i> <span>Circular</span></a>
+          <a href="/signupac"><i class="fa-solid fa-user-plus"></i> <span>Add Account</span></a>
+          <a href="/choose"><i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span></a>
+        </div>
+      </div>
+    <div class="content">
+        <div class="welcome">
+            <h3>You can add or see students.</h3>
+        </div>
+        <div class="st">
+            <a href="/showClass" class="box">
+                <h2 style="font-size: 30px;">Add Student</h2>
+                <p style="font-size: 22px; margin-top: 10px;">You can add students here.</p>
+            </a>
+            <a href="/show" class="box">
+                <h2 style="font-size: 30px;">See Students</h2>
+                <p style="font-size: 22px; margin-top: 10px;">You can see students here.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Admin Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    /* Simple reset and base styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #f6f8fa; /* Light gray with blue tint */
+    }
+
+    /* Sidebar styles */
+    .sidebar {
+      width: 220px;
+      background-color: #2c3e50; /* Deep blue-gray */
+      color: white;
+      padding: 20px 0;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ecf0f1; /* Off-white */
+    }
+
+    .sidebar hr {
+      border: none;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .nav-links a {
+      display: block;
+      color: #bdc3c7; /* Light gray */
+      text-decoration: none;
+      padding: 10px 20px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+
+    .nav-links a.active {
+      background-color: #3498db; /* Bright blue */
+      color: white;
+    }
+
+    .nav-links i {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    /* Main content area */
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .welcome {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      border-left: 4px solid #3498db; /* Bright blue */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .account {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .account-icon {
+      width: 32px;
+      height: 32px;
+      background-color: #eaeaea;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .account-name {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    /* Stats boxes */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .stat-box {
+      background-color: white;
+      border-radius: 8px;
+      padding: 24px;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .stat-box.primary {
+      background-color: #3498db; 
+      color: white;
+    }
+
+    .stat-box.success {
+      background-color: #27ae60; 
+      color: white;
+    }
+    
+    .stat-box.warning {
+      background-color: #f39c12; 
+      color: white;
+    }
+
+    .stat-box h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .stat-box p {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .stat-box i {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 15px;
+      opacity: 0.8;
+    }
+
+    /* Simple notice panels */
+    .notice-section {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .notice-section h3 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .notice-circles {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .notice-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .notice-circle:hover {
+      transform: translateY(-3px);
+    }
+
+    .notice-circle.new {
+      border: 2px solid #3498db;
+    }
+
+    .notice-circle i {
+      font-size: 32px;
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+
+    .notice-circle p {
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    /* Simple responsive design */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 60px;
+      }
+      
+      .sidebar h2, .nav-links a span {
+        display: none;
+      }
+      
+      .nav-links i {
+        margin-right: 0;
+      }
+      
+      .nav-links a {
+        text-align: center;
+        padding: 15px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>School Management</h2>
+    <hr>
+    <div class="nav-links">
+      <a href="/teacherd" class="active"><i class="fa-solid fa-house"></i> <span>Home</span></a>
+      <a href="/stud-teacher"><i class="fa-solid fa-user"></i> <span>Students</span></a>
+      <a href="/class-teacher"><i class="fa-solid fa-chalkboard-user"></i> <span>Class</span></a>
+     <a href="/teacher-circular"><i class="fa-solid fa-file-lines"></i> <span>Circulars</span></a>
+      <a href="/choose"><i class="fa-solid fa-right-from-bracket"></i> <span>Logout</span></a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="welcome">
+      <h3 style="margin: 0;">Welcome to your Dashboard, Teacher!</h3>
+      <div class="account">
+        <div class="account-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <span class="account-name">Teacher</span>
+      </div>
+    </div>
+    
+    <div class="stats">
+      <a href="/admindash" class="stat-box primary">
+        <i class="fa-solid fa-user-graduate"></i>
+        <h2>Total Students</h2>
+        <p><%= studentCount %></p>
+      </a>
+      
+      <a href="/class" class="stat-box warning">
+        <i class="fa-solid fa-chalkboard"></i>
+        <h2>Total Classes</h2>
+        <p><%= classCount %></p>
+      </a>
+    </div>
+
+    <!-- Simplified Notice Circles -->
+    <div class="notice-section">
+      <h3>Latest Notices</h3>
+      
+      <div class="notice-circles">
+        <a href="/notice/ptm" class="notice-circle new">
+          <i class="fa-solid fa-calendar-check"></i>
+          <p>PTM Schedule</p>
+        </a>
+        
+        <a href="/notice/exam" class="notice-circle">
+          <i class="fa-solid fa-file-lines"></i>
+          <p>Exam Updates</p>
+        </a>
+        
+        <a href="/notice/events" class="notice-circle">
+          <i class="fa-solid fa-bullhorn"></i>
+          <p>School Events</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

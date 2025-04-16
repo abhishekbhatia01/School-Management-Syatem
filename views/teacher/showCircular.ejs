@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Circulars</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #eaeaea;
+        }
+        .circular {
+            background-color: #f8f9fa;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            transition: transform 0.2s;
+        }
+        .circular:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .circular-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .circular-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #34495e;
+        }
+        .circular-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        .circular-content {
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+        .no-circulars {
+            text-align: center;
+            padding: 30px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>School Circulars</h1>
+        
+        <% if (circulars && circulars.length > 0) { %>
+            <% circulars.forEach(circular => { %>
+                <div class="circular">
+                    <div class="circular-header">
+                        <span class="circular-title"><%= circular.circularTitle %></span>
+                        <span class="circular-date"><%= circular.IssueDate || "N/A" %></span>
+                    </div>
+                    <div class="circular-content">
+                        <strong>Ref:</strong> <%= circular.circularRef %> <br>
+                        <strong>Priority:</strong> <%= circular.priority %> <br>
+                        <strong>Category:</strong> <%= circular.category %>
+                    </div>
+                   
+                </div>
+            <% }); %>
+        <% } else { %>
+            <p class="no-circulars">No circulars available at this time.</p>
+        <% } %>
+        
+        <a href="/dashome" class="btn btn-back">Back to Dashboard</a>
+    </div>
+</body>
+</html>
