@@ -94,39 +94,9 @@
     "classId": 5,
     "fname": "Deepak",
     "lname": "Singh",
-    "age": "22",
+    "age": "21",
     "fathername": "Raj Singh",
     "mobno": "6665554444",
     "batch": "2022"
-  },
-  {
-    "id": 11,
-    "classId": 1,
-    "fname": "Abhishek",
-    "lname": "Bhatia",
-    "age": "20",
-    "fathername": "Suresh Kumar",
-    "mobno": "9034678817",
-    "batch": "2023"
-  },
-  {
-    "id": 12,
-    "classId": 1,
-    "fname": "Abhishek",
-    "lname": "Bhatia",
-    "age": "20",
-    "fathername": "Suresh Kumar",
-    "mobno": "9034678817",
-    "batch": "2023"
-  },
-  {
-    "id": 13,
-    "classId": 11,
-    "fname": "Abhishek",
-    "lname": "Bhatia",
-    "age": "20",
-    "fathername": "Suresh Kumar",
-    "mobno": "9034678817",
-    "batch": "2023"
   }
 ]

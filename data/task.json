@@ -16,5 +16,14 @@
     "taskType": "homework",
     "subject": "math",
     "dueDate": "2004-10-01"
+  },
+  {
+    "id": 3,
+    "classId": 1,
+    "taskTitle": "Algebra Worksheet\"",
+    "taskDescription": "dashome",
+    "taskType": "homework",
+    "subject": "math",
+    "dueDate": "2025-11-01"
   }
 ]
